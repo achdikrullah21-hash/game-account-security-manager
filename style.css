@@ -24,6 +24,7 @@ body{
 }
 
 .login-card{
+
     width:350px;
 
     background:white;
@@ -48,5 +49,4 @@ body{
 
 .login-card p{
     color:gray;
-    margin-bottom:20px;
 }
