@@ -15,6 +15,35 @@ body{
     color:white;
 }
 
+.sidebar{
+    width:250px;
+    min-height:100vh;
+    background:#1e293b;
+    padding:20px;
+}
+
+.sidebar h3{
+    margin-bottom:30px;
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:10px;
+    margin-bottom:10px;
+    border-radius:10px;
+}
+
+.sidebar a:hover{
+    background:#334155;
+}
+
+.main-content{
+    flex:1;
+    padding:20px;
+}
+
 .card{
     border:none;
     border-radius:20px;
@@ -25,95 +54,93 @@ body{
     padding:20px;
 }
 
+.wrapper{
+    display:flex;
+}
+
 </style>
 
 </head>
 
 <body>
 
-<div class="container py-4">
+<div class="wrapper">
 
-<h1 class="mb-4">
-🎮 Game Account Security Manager
-</h1>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
 
-<div class="row">
+        <h3>🎮 GASM</h3>
 
-<div class="col-md-4 mb-3">
+        <a href="#">📊 Dashboard</a>
 
-<div class="card stat-card">
+        <a href="#">👤 Accounts</a>
 
-<h2>0</h2>
+        <a href="#">🔐 Encrypt Data</a>
 
-<p>Total Accounts</p>
+        <a href="#"># SHA-256 Hash</a>
 
-</div>
+        <a href="index.html">🚪 Logout</a>
 
-</div>
+    </div>
 
-<div class="col-md-4 mb-3">
+    <!-- CONTENT -->
+    <div class="main-content">
 
-<div class="card stat-card">
+        <h2>Dashboard</h2>
 
-<h2>0</h2>
+        <div class="row mt-4">
 
-<p>Total Encrypt</p>
+            <div class="col-md-4 mb-3">
 
-</div>
+                <div class="card stat-card">
 
-</div>
+                    <h1>0</h1>
 
-<div class="col-md-4 mb-3">
+                    <p>Total Accounts</p>
 
-<div class="card stat-card">
+                </div>
 
-<h2>0</h2>
+            </div>
 
-<p>Total Hash</p>
+            <div class="col-md-4 mb-3">
 
-</div>
+                <div class="card stat-card">
 
-</div>
+                    <h1>0</h1>
 
-</div>
+                    <p>Total Encrypt</p>
 
-<div class="card p-4">
+                </div>
 
-<h3>Game Accounts</h3>
+            </div>
 
-<table class="table">
+            <div class="col-md-4 mb-3">
 
-<thead>
+                <div class="card stat-card">
 
-<tr>
-<th>Username</th>
-<th>Nickname</th>
-<th>Level</th>
-<th>Status</th>
-</tr>
+                    <h1>0</h1>
 
-</thead>
+                    <p>Total Hash</p>
 
-<tbody>
+                </div>
 
-<tr>
+            </div>
 
-<td>Mek</td>
-<td>ShadowX</td>
-<td>50</td>
-<td>Encrypted</td>
+        </div>
 
-</tr>
+        <div class="card p-4 mt-3">
 
-</tbody>
+            <h4>Recent Activity</h4>
 
-</table>
+            <ul>
+                <li>Login System Ready</li>
+                <li>Dashboard Created</li>
+                <li>Waiting for Encryption Module</li>
+            </ul>
 
-<button class="btn btn-primary">
-Add Account
-</button>
+        </div>
 
-</div>
+    </div>
 
 </div>
 
